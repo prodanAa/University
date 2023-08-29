@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+float a, b, c, ha, hb, hc, p, S;
+int main()
+{
+	system("chcp 1251");
+	cout << "Input walls on the triangle\n";
+	cin >> a >> b >> c;
+	p = (a + b + c) / 2;
+	S = sqrt(p * (p - a) * (p - b) * (p - c));
+	ha = (2 * S) / a;
+	hb = (2 * S) / 2;
+	hc = (2 * S) / 2;
+	cout << "ha= " << ha << endl;
+	cout << "hb= " << hb << endl;
+	cout << "bc= " << hc << endl;
+	system("pause"); 
+	return 0;
+
+
+}
