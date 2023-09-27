@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	system("chcp 1251");
+	char ch;
+	cout << "Въведете текс: ";
+	do
+	{
+		cin.get(ch);
+		if (ch >= 'a' && ch <= 'z')
+		{
+			ch += 3;
+			if (ch >= 'z')
+				ch -= 26;
+		}
+		else if (ch >= 'A' && ch <= 'Z')
+		{
+			ch += 3; 
+			if (ch >= 'Z')
+				ch -= 26;
+		}
+		cout << ch;
+	} while (ch != '.');
+	return 0;
+}
