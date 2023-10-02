@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	char ch;
+	do{
+		cin.get(ch);
+		if (ch >= 'a'&& ch <= 'z')ch += 'N' - 'n';
+		if (ch == ' ')ch = '_';
+		cout << ch;
+	} while (ch != '.');
+	cout << endl;
+	system("pause");
+	return 0;
+}
