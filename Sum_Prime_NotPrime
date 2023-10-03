@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	system("chcp 1251");
+	int n, SumN = 0, SumCh = 0, brN = 0; // Initialize brN to 0
+
+	do {
+		cin >> n;
+		if (n % 2 == 0)
+			SumCh += n;
+		else {
+			SumN += n;
+			brN++;
+		}
+	} while (n != 0); // Change the loop termination condition
+
+	cout << "Сумата на четните числа е: " << SumCh << endl;
+	cout << "Сумата на нечетните числа е: " << SumN  << brN << endl; // Separate brN from SumN
+	system("pause");
+	return 0;
+}
+
