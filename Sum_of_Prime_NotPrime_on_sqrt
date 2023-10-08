@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Въведете естествено число n: ";
+    cin >> n;
+
+    if (n < 1) {
+        cout << "Невалидно входно число. Моля, въведете положително число." << endl;
+        return 1;
+    }
+
+    if (n % 2 == 1) { // Ако n е нечетно
+        int sum = 0;
+        for (int i = 1; i <= n; i += 2) {
+            sum += i;
+        }
+        cout << "Сумата на нечетните числа от 1 до " << n << " е: " << sum << endl;
+    } else { // Ако n е четно
+        long long product = 1;
+        for (int i = 2; i <= n; i += 2) {
+            product *= i;
+        }
+        cout << "Произведението на четните числа от 2 до " << n << " е: " << product << endl;
+    }
+
+    return 0;
+}
