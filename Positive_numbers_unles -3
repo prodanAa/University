@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int num;
+	int positiveCount = 0; // Променлива за броя на положителните числа
+
+	cout << "Въведете цели числа (за да спрете, въведете -3):" << endl;
+
+	while  {
+		cin >> num;
+
+		if (num == -3) {
+			break; // Излизаме от цикъла, ако сме въвели -3
+		}
+
+		if (num > 0) {
+			positiveCount++; // Увеличаваме броя на положителните числа
+		}
+	}
+
+	cout << "Брой положителни числа: " << positiveCount << endl;
+	system("pause");
+	return 0;
+}
